@@ -1,0 +1,1 @@
+print("请输入您的班号:")ClassNum = input()print("请输入您的姓名:")YName = input()print("请输入您当前所学课程:")ClassName = input()print(ClassNum,YName,ClassName)#输入班级号等个人信息后原样输出
