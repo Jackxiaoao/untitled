@@ -114,10 +114,118 @@
 # #第二个随机数
 # print("random():",random.random())
 
-import random
-random.seed()
-print("使用默认种子生成随机数:",random.random())
-random.seed(10)
-print("使用整数种子生成随机数:",random.random())
-random.seed("hello",2)
-print("使用字符串种子生成随机数:",random.random())
+# import random
+# random.seed()
+# print("使用默认种子生成随机数:",random.random())
+# random.seed(10)
+# print("使用整数种子生成随机数:",random.random())
+# random.seed("hello",2)
+# print("使用字符串种子生成随机数:",random.random())
+
+
+#shuffle() 方法将序列的所有元素随机排序
+
+# import random
+# list = [20,16,10,5];
+# random.shuffle(list)
+# print("随机排序列表:",list)
+#
+# random.shuffle(list)
+# print("随机排序列表:",list)
+
+#uniform() 方法将随机生成下一个实数,它在[x,y]范围内.
+
+# import random
+# print("uniform(5,10)的随机浮点数:",random.uniform(5,10))
+# print("uniform(7,10)的随机浮点数:",random.uniform(7,14))
+
+#randint() 方法用于生成一个指定范围内的整数
+# import random
+# print("randint(0,10)的随机整数:",random.randint(0,10))
+# print("randint(0,100)的随机整数:",random.randint(0,100))
+
+#下表实例变量a值为字符串 "Hello"，b变量值为 "Python"：
+# a = "Hello"
+# b = "Python"
+# print("a+b输出结果:",a + b)
+# print("a*2输出结果:",a*2)
+# print("a[1]输出结果:",a[1])
+# print("a[1:4]输出结果:",a[1:4])
+# if("H" in a):
+#     print("H在变量a中")
+# else:
+#     print("H不在变量a中")
+# if("M" not in a):
+#     print("M不在变量a中")
+# else:
+#     print("M在变量a中")
+# print(r'\n')
+# print(R'\n')
+
+# <1>find
+# 检测 str 是否包含在 mystr中，如果是返回开始的索引值，否则返回-1
+# 规则：mystr.find(str, start=0, end=len(mystr))
+# a = "hello world I am Anna"
+# print(a.find("Anna",0,21))
+
+#<2>index
+#跟find()方法一样，只不过如果str不在 mystr中会报一个异常.
+#规则：mystr.index(str, start=0, end=len(mystr))
+# a = "hello world I am Anna"
+# print(a.index("Anna",0,21))
+
+# <3>count
+# 返回 str在start和end之间 在 mystr里面出现的次数
+# mystr.count(str, start=0, end=len(mystr))
+# 例：
+# a = "hello world I am Anna"
+# print(a.count("Anna",0,21))
+
+# <4>replace
+# 把 mystr 中的 str1 替换成 str2,如果 count 指定，则替换不超过 count 次.
+# mystr.replace(str1, str2,  mystr.count(str1))
+# 例：
+# a = " hello world I am Anna"
+# b = a.replace("l","b",2)
+# print(b)
+
+# <5>split
+# 以 str 为分隔符切片 mystr，如果 maxsplit有指定值，则仅分隔 maxsplit 个子字符串
+# mystr.split(str="", 2)
+# 例：
+# a = "hello world I am Anna"
+# b = a.split(" ",2)
+# print(b)
+
+# <6>capitalize
+# 把字符串的第一个字符大写，其他全部改为小写
+# mystr.capitalize()
+# 例：
+# a = "hello world I am Anna"
+# b = a.capitalize()
+# print(b)
+
+
+# <7>startswith
+# 检查字符串是否是以 obj 开头, 是则返回 True，否则返回 False
+# mystr.startswith(obj)
+# 例：
+# a = "hello world I am Anna"
+# b = a.startswith("hello")
+# print(b)
+
+# <8>endswith
+# 检查字符串是否以obj结束，如果是返回True,否则返回 False.
+# mystr.endswith(obj)
+# 例：
+# a = "hello world I am Anna"
+# b = a.endswith("Anna")
+# print(b)
+
+# <9>lower
+# 转换 mystr 中所有大写字符为小写
+# mystr.lower()
+# 例：
+a = "hello world I am Anna"
+b = a.lower()
+print(b)
